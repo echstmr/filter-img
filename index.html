@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Filter IMG</title>
+	<link rel="stylesheet" href="style.css">
+
+	<!-- LINKS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+
+	<div class="menu">
+		<a href="#" class="btn" data-filter="all">All</a>
+		<a href="#" class="btn" data-filter="logo">Logo Design</a>
+		<a href="#" class="btn" data-filter="web">Web Design</a>
+		<a href="#" class="btn" data-filter="mobile">Mobile Application</a>
+	</div>
+
+	<div class="box" id="storeItems">
+
+		<div class="store-item web">
+			<img src="./img/camera-1.jpg" alt="" class="store-img">
+		</div>
+		<div class="store-item mobile">
+			<img src="./img/headphone-1.jpg" alt="" class="store-img">
+		</div>
+		<div class="store-item logo">
+			<img src="./img/shoe-1.jpg" alt="" class="store-img">
+		</div>
+		<div class="store-item web">
+			<img src="./img/camera-2.jpg" alt="" class="store-img">
+		</div>
+		<div class="store-item mobile">
+			<img src="./img/headphone-2.jpg" alt="" class="store-img">
+		</div>
+		<div class="store-item mobile">
+			<img src="./img/headphone-3.jpg" alt="" class="store-img">
+		</div>
+
+	</div>
+
+	<!-- Modal Structure -->
+	<div id="itemModal" class="modal">
+		<div class="modal-content">
+			<span class="close-btn">&times;</span>
+			<img id="modalImage" src="" alt="modal image" class="modal-img">
+			<div class="modal-buttons">
+				<button id="prevBtn" class="modal-btn"><i class="fas fa-chevron-left"></i></button>
+				<button id="nextBtn" class="modal-btn"><i class="fas fa-chevron-right"></i></button>
+			</div>
+		</div>
+	</div>
+	
+	<script src="script.js"></script>
+</body>
+</html>
