@@ -74,6 +74,54 @@ body {
     animation: fadeIn 0.5s;
 }
 
+.menu-icon{
+    display: none;
+}
+
+@media screen and (max-width: 950px){
+
+    .menu{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+       display: none;
+       z-index: 9999;
+      
+    }
+        
+    .menu-icon{
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        height: 300px;
+        cursor: pointer;
+    }
+
+    .menu.active{
+        display: block;
+        height: 300px;
+        display: flex;
+        
+    }
+
+    .box{
+        margin-top: 13%;
+    }
+    .modal-img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+   
+}
+
+
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
